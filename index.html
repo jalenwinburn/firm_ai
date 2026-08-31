@@ -1,133 +1,368 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Meeting Summarize (DRAFT)</title>
+    <title>Firm AI — Intelligence for Better Decisions</title>
 
-    <style>
-
-        body{
-            font-family: Arial, sans-serif;
-            background:#f4f6f9;
-            max-width:900px;
-            margin:auto;
-            padding:40px;
-        }
-
-        h1{
-            color:#1f4e79;
-        }
-
-        textarea{
-            width:100%;
-            height:220px;
-            font-size:16px;
-            padding:15px;
-            border-radius:8px;
-            border:1px solid lightgray;
-            resize:none;
-        }
-
-        button{
-
-            margin-top:20px;
-            padding:15px 30px;
-            font-size:16px;
-            border:none;
-            border-radius:8px;
-            background:#1f4e79;
-            color:white;
-            cursor:pointer;
-
-        }
-
-        button:hover{
-
-            background:#163957;
-
-        }
-
-        #summary{
-
-            margin-top:40px;
-            background:white;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0px 0px 10px rgba(0,0,0,.1);
-
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="landing-body">
 
-<h1>Meeting Summarize (DRAFT)</h1>
+    <!-- Navigation -->
 
-<p>
-GAVIN LOVES ISREAL
-</p>
+    <nav class="landing-nav">
 
-<textarea
-id="notes"
-placeholder="Paste meeting notes here..."></textarea>
+        <a href="index.html" class="landing-logo">
+            FIRM<span>AI</span>
+        </a>
 
-<br>
+        <div class="landing-nav-links">
+            <a href="#product">Product</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#why-firm-ai">Why Firm AI</a>
+        </div>
 
-<button onclick="summarizeNotes()">
+        <div class="landing-nav-actions">
+            <a href="app.html" class="login-link">Log in</a>
+            <a href="app.html" class="nav-button">Request access</a>
+        </div>
 
-Summarize
+    </nav>
 
-</button>
 
-<div id="summary">
+    <main>
 
-<h2>Summary</h2>
+        <!-- HERO -->
 
-<p id="output">
+        <section class="hero">
 
-Nothing summarized yet.
+            <div class="hero-eyebrow">
+                INTELLIGENCE FOR DESIGN FIRMS
+            </div>
 
-</p>
+            <h1>
+                Know which opportunities<br>
+                are worth pursuing.
+            </h1>
 
-</div>
+            <p class="hero-description">
+                Firm AI analyzes RFPs against your firm's experience,
+                capacity, and financial goals—helping leadership make
+                better go / no-go decisions before valuable time is spent
+                on a proposal.
+            </p>
 
-<script>
+            <div class="hero-actions">
 
-function summarizeNotes(){
+                <a href="app.html" class="primary-button">
+                    Explore the product →
+                </a>
 
-let notes=document.getElementById("notes").value;
+                <a href="#how-it-works" class="secondary-button">
+                    See how it works
+                </a>
 
-if(notes===""){
+            </div>
 
-document.getElementById("output").innerHTML=
-"Please paste some meeting notes.";
+        </section>
 
-return;
 
-}
+        <!-- PRODUCT PREVIEW -->
 
-document.getElementById("output").innerHTML=
+        <section id="product" class="product-preview">
 
-"<strong>AI Summary</strong><br><br>" +
+            <div class="preview-header">
 
-"• Meeting successfully analyzed.<br>" +
+                <div>
+                    <div class="section-label">
+                        OPPORTUNITY INTELLIGENCE
+                    </div>
 
-"• Action Items detected.<br>" +
+                    <h2>
+                        Turn complex opportunities<br>
+                        into clear decisions.
+                    </h2>
+                </div>
 
-"• Client follow-up recommended.<br>" +
+                <p>
+                    Firm AI brings together the information firm leaders
+                    already have—but rarely have time to connect.
+                </p>
 
-"• Budget discussion identified.<br><br>" +
+            </div>
 
-"<strong>Original Notes:</strong><br><br>" +
 
-notes;
+            <div class="preview-window">
 
-}
+                <div class="preview-topbar">
 
-</script>
+                    <span>
+                        FIRM AI
+                    </span>
+
+                    <span>
+                        OPPORTUNITIES / ANALYSIS
+                    </span>
+
+                    <div class="preview-user">
+                        JW
+                    </div>
+
+                </div>
+
+
+                <div class="preview-content">
+
+                    <div class="preview-project">
+
+                        <span>
+                            RFQ · AUSTIN, TEXAS
+                        </span>
+
+                        <h3>
+                            Austin Downtown Mixed-Use
+                        </h3>
+
+                    </div>
+
+
+                    <div class="preview-recommendation">
+
+                        <span>
+                            RECOMMENDATION
+                        </span>
+
+                        <strong>
+                            PURSUE
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="preview-metrics">
+
+                    <div>
+                        <span>OPPORTUNITY SCORE</span>
+                        <strong>82</strong>
+                    </div>
+
+                    <div>
+                        <span>FIRM MATCH</span>
+                        <strong>87%</strong>
+                    </div>
+
+                    <div>
+                        <span>PROJECTED MARGIN</span>
+                        <strong>28%</strong>
+                    </div>
+
+                    <div>
+                        <span>ESTIMATED FEE</span>
+                        <strong>$425K</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+
+        <section id="how-it-works" class="how-it-works">
+
+            <div class="section-intro">
+
+                <div class="section-label">
+                    HOW IT WORKS
+                </div>
+
+                <h2>
+                    From RFP to recommendation.
+                </h2>
+
+            </div>
+
+
+            <div class="steps-grid">
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Add an opportunity
+                    </h3>
+
+                    <p>
+                        Upload an RFP or opportunity package to Firm AI.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Firm AI analyzes the fit
+                    </h3>
+
+                    <p>
+                        Requirements are compared against your firm's
+                        experience, team capacity, and financial goals.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Make a better decision
+                    </h3>
+
+                    <p>
+                        Get a clear recommendation, understand the risks,
+                        and investigate the evidence behind the analysis.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHY FIRM AI -->
+
+        <section id="why-firm-ai" class="why-firm-ai">
+
+            <div class="why-content">
+
+                <div class="section-label">
+                    BUILT FOR FIRM LEADERSHIP
+                </div>
+
+                <h2>
+                    Stop guessing.<br>
+                    Start knowing.
+                </h2>
+
+                <p>
+                    Pursuing the wrong opportunity costs more than the time
+                    spent writing a proposal. It pulls senior staff away from
+                    profitable work, creates staffing problems, and can lock
+                    a firm into projects that were never the right fit.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-list">
+
+                <div class="benefit">
+                    <span>01</span>
+
+                    <div>
+                        <strong>
+                            Evaluate strategic fit
+                        </strong>
+
+                        <p>
+                            Understand how closely an opportunity aligns with
+                            the firm's experience and direction.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="benefit">
+                    <span>02</span>
+
+                    <div>
+                        <strong>
+                            Understand financial potential
+                        </strong>
+
+                        <p>
+                            Estimate effort, cost, fees, and potential margin
+                            before committing resources.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="benefit">
+                    <span>03</span>
+
+                    <div>
+                        <strong>
+                            Plan the right team
+                        </strong>
+
+                        <p>
+                            Identify the people best suited for the work and
+                            understand potential capacity constraints.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="landing-cta">
+
+            <div class="section-label">
+                FIRM INTELLIGENCE
+            </div>
+
+            <h2>
+                Your next opportunity<br>
+                deserves a better decision.
+            </h2>
+
+            <a href="app.html" class="primary-button">
+                Explore Firm AI →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer class="landing-footer">
+
+        <div class="landing-logo">
+            FIRM<span>AI</span>
+        </div>
+
+        <span>
+            © 2026 Firm AI
+        </span>
+
+    </footer>
+
 
 </body>
 
