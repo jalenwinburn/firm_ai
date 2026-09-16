@@ -4,7 +4,7 @@ Complete static website, continuing Jalen's original Firm AI project. No framewo
 
 ## Open locally
 
-1. Extract the complete project ZIP into a new folder.
+1. Clone this repository and check out the branch you want to review.
 2. Open that folder in VS Code.
 3. Open `dist/index.html` in your browser, or serve the `dist` folder with VS Code Live Server.
 4. Select **Explore Firm AI** to open the Colorado River Civic Waterfront opportunity.
@@ -13,7 +13,7 @@ Keep the entire `dist` folder together, including `sources`. The flagship produc
 
 ## Project structure
 
-- `dist/index.html`, `style.css`, `script.js`: existing landing page and shared original demo styling/behavior.
+- `dist/index.html`, `dist/style.css`, `dist/script.js`: landing page and shared original demo styling/behavior.
 - `dist/app.html`: Fieldwork Studio opportunity and workspace shell.
 - `dist/intelligence.css`: flagship typography, layout and intelligence surface.
 - `dist/intelligence-content.css`: detail sections, source viewer, drawers, analysis state and print rules.
@@ -35,7 +35,22 @@ The RFQ does not disclose a design fee. The displayed indicative fee range is la
 
 ## Verification
 
-Browser checks passed on September 15, 2026: eight score drawers, nested project/person evidence, seven tabs, source navigation, keyboard/history, 164 projects, 47 people, six-stage analysis, export, print, mobile menus, landing page and Atlas regression. Nine principal routes were checked at 320, 390, 768, 1024 and 1440 pixels with no horizontal overflow. No browser runtime or failed-resource errors were found.
+The original release handoff recorded successful Chromium checks. Recovery verification subsequently identified a 320 px Requirements overflow, clipped recommendation content, and a drawer that stayed open when its source link matched the current URL. These are addressed in the follow-up layout changes; do not rely solely on the original handoff's results.
+
+Follow-up Chromium verification passed 160 page/width checks across 320, 360, 375, 390, 600, 768, 800, 850, 1024, and 1440 px, with no document overflow or clipped recommendation content. The eight score drawers, nested evidence, same-URL source navigation and focus, six source downloads, PDF page controls, complete project/team tables, keyboard/history navigation, analysis/cancellation/rerun, summary export, print rules, mobile menu, and all ten Atlas routes passed. No browser runtime errors or failed HTTP resources were recorded. Desktop and narrow-screen screenshots were also inspected.
+
+Before merging, check all opportunity and workspace routes, the Atlas demo, source downloads, evidence drawers, analysis completion/cancellation, export, print, keyboard/history behavior, and narrow screens. Check content clipping as well as document overflow. The component score strip and data tables intentionally scroll horizontally within their own containers.
+
+The original Windows-only preparation script, browser-test script, and screenshots were not in the recovery ZIP. They have not been recreated. Firefox, Safari, and a formal accessibility audit remain outstanding.
+
+## Development conventions
+
+- `dist/` is the maintained, deployable source directory, not generated output. Keep it in Git; do not introduce a duplicate `src/` tree without a build-system decision.
+- Keep source facts in `fieldwork-data.js`, evaluation logic in `intelligence-model.js`, and rendering/interactions in `opportunity.js`.
+- Use two-space indentation, UTF-8, LF line endings, and readable CSS/JavaScript. `.editorconfig` supplies editor defaults; avoid unrelated formatting changes to legacy files.
+- Do not manually reformat the generated dataset or alter original PDF/XLSX evidence files. Preserve their integrity hashes.
+- Keep credentials, deployment-machine linkage, dependencies, and temporary verification output out of Git. See `.gitignore`.
+- There is no application install or build step. The three maintained flagship files can be formatted with `npx prettier@3.6.2 --write dist/intelligence.css dist/intelligence-content.css dist/opportunity.js`.
 
 ## Hosting
 
@@ -45,4 +60,4 @@ Production website: https://firm-ai-jalen7.vercel.app
 
 Direct opportunity: https://firm-ai-jalen7.vercel.app/app.html
 
-Vercel is configured by `vercel.json` to serve `dist` with no build or install step. This release was deployed directly to the existing Vercel project; the connected GitHub repository was not changed. Future GitHub-triggered deployments must include this complete project and configuration to avoid restoring an older version.
+Vercel is configured by `vercel.json` to serve `dist` with no build or install step. The release has been recovered onto `sync/fieldwork-release-recovery`; it is not yet merged into `main`. Automatic Vercel deployment is disabled for that recovery branch. Merging into `main` may trigger production deployment and requires explicit approval.

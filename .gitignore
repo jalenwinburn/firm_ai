@@ -1,0 +1,15 @@
+# Local dependencies and tooling output; dist is maintained source, not a build.
+node_modules/
+playwright-report/
+test-results/
+
+# Machine-specific deployment linkage and credentials.
+.vercel/
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files.
+.DS_Store
+Thumbs.db
+*.log

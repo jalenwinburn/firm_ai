@@ -1,0 +1,3 @@
+# Original evidence files must remain byte-for-byte intact.
+*.pdf binary
+*.xlsx binary
