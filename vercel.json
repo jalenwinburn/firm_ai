@@ -1,0 +1,11 @@
+{
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "dist",
+  "git": {
+    "deploymentEnabled": {
+      "sync/fieldwork-release-recovery": false
+    }
+  }
+}
