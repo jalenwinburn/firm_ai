@@ -1,0 +1,587 @@
+{
+  "schemaVersion": 1,
+  "id": "juniper-review-test-v1",
+  "kind": "test-fixture",
+  "firmSnapshotId": "2026-09-14",
+  "opportunity": {
+    "id": "TEST-JLR-2028-02",
+    "name": "Juniper Library Retrofit",
+    "titleLines": ["Juniper Library", "Retrofit"],
+    "eyebrow": "RFQ / TEST–02",
+    "client": "Juniper Library District",
+    "location": "Denver, Colorado",
+    "disciplines": ["Interior Design", "Building Reuse"],
+    "due": "2028-03-22T11:00:00-06:00",
+    "dueLabel": "March 22, 2028 · 11:00 AM MDT",
+    "dueShort": "MAR 22",
+    "dueYearTime": "2028 · 11:00 AM MDT",
+    "issued": "2028-03-01",
+    "intervalLabel": "21 days from issue to deadline",
+    "constructionBudget": null,
+    "budgetBasis": "Budget not supplied in test result",
+    "area": "18,000 sq ft",
+    "areaContext": "existing building",
+    "anticipatedStart": "JUN 2028",
+    "primarySourceId": "test-rfq"
+  },
+  "disclosure": {
+    "badge": "TEST RESULT",
+    "evaluation": "Synthetic changed result · rendering verification only",
+    "match": "test match",
+    "score": "Synthetic changed result · rendering verification only",
+    "project": "Synthetic changed result · rendering verification only",
+    "person": "Synthetic changed result · rendering verification only",
+    "source": "Synthetic changed result · rendering verification only",
+    "footer": "Synthetic changed result · rendering verification only",
+    "run": "Synthetic changed result · rendering verification only"
+  },
+  "recommendation": {
+    "id": "pursuit",
+    "label": "Pursuit recommendation",
+    "value": 42,
+    "confidence": "Low",
+    "reason": "The test result calls for review before a pursuit decision.",
+    "evidence": ["Two test precedents need scope confirmation."],
+    "projects": ["FW-P010", "FW-P014"],
+    "sources": [
+      {
+        "sourceId": "test-rfq",
+        "page": 2,
+        "label": "Changed evidence reference"
+      }
+    ],
+    "decision": "REVIEW",
+    "summary": "Resolve missing evidence",
+    "statement": [
+      "Building reuse needs further review.",
+      "Budget and staffing are unresolved."
+    ],
+    "drivers": [
+      {
+        "title": "Different market",
+        "detail": "Library adaptation requires specialist review.",
+        "concern": true
+      },
+      {
+        "title": "Evidence gap",
+        "detail": "Budget is unknown.",
+        "concern": true
+      }
+    ],
+    "people": ["FW-E008", "FW-E010"],
+    "components": []
+  },
+  "scores": [
+    {
+      "id": "test-fit",
+      "label": "Project fit",
+      "short": "FIT",
+      "value": 0,
+      "confidence": "Low",
+      "reason": "Changed component 1 requires review.",
+      "evidence": ["Changed evidence 1"],
+      "projects": ["FW-P010", "FW-P014"],
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 2,
+          "label": "Changed evidence reference"
+        }
+      ],
+      "components": [["Changed factor", 0]],
+      "people": []
+    },
+    {
+      "id": "test-experience",
+      "label": "Relevant experience",
+      "short": "EXPERIENCE",
+      "value": 7,
+      "confidence": "Low",
+      "reason": "Changed component 2 requires review.",
+      "evidence": ["Changed evidence 2"],
+      "projects": [],
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 2,
+          "label": "Changed evidence reference"
+        }
+      ],
+      "people": [],
+      "components": []
+    },
+    {
+      "id": "test-team",
+      "label": "Team strength",
+      "short": "TEAM",
+      "value": 14,
+      "confidence": "Low",
+      "reason": "Changed component 3 requires review.",
+      "evidence": ["Changed evidence 3"],
+      "people": ["FW-E008", "FW-E010"],
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 2,
+          "label": "Changed evidence reference"
+        }
+      ],
+      "projects": [],
+      "components": []
+    },
+    {
+      "id": "test-capacity",
+      "label": "Capacity",
+      "short": "CAPACITY",
+      "value": 21,
+      "confidence": "Low",
+      "reason": "Changed component 4 requires review.",
+      "evidence": ["Changed evidence 4"],
+      "people": [],
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 2,
+          "label": "Changed evidence reference"
+        }
+      ],
+      "projects": [],
+      "components": []
+    },
+    {
+      "id": "test-strategic",
+      "label": "Strategic alignment",
+      "short": "STRATEGY",
+      "value": 28,
+      "confidence": "Low",
+      "reason": "Changed component 5 requires review.",
+      "evidence": ["Changed evidence 5"],
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 2,
+          "label": "Changed evidence reference"
+        }
+      ],
+      "projects": [],
+      "people": [],
+      "components": []
+    },
+    {
+      "id": "test-financial",
+      "label": "Financial signals",
+      "short": "FINANCIAL",
+      "value": null,
+      "confidence": "Low",
+      "reason": "Changed component 6 requires review.",
+      "evidence": ["Changed evidence 6"],
+      "projects": [],
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 2,
+          "label": "Changed evidence reference"
+        }
+      ],
+      "people": [],
+      "components": []
+    },
+    {
+      "id": "test-risk",
+      "label": "Risk position",
+      "short": "RISK",
+      "value": 42,
+      "confidence": "Low",
+      "reason": "Changed component 7 requires review.",
+      "evidence": ["Changed evidence 7"],
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 2,
+          "label": "Changed evidence reference"
+        }
+      ],
+      "projects": [],
+      "people": [],
+      "components": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "test-rfq",
+      "documentId": "Fieldwork_2027_Strategic_Plan.pdf",
+      "kind": "opportunity"
+    },
+    {
+      "id": "test-projects",
+      "documentId": "Fieldwork_Project_Database.xlsx",
+      "kind": "firm"
+    },
+    {
+      "id": "test-qualifications",
+      "documentId": "Fieldwork_Master_Qualifications_2026.pdf",
+      "kind": "firm"
+    },
+    {
+      "id": "test-resumes",
+      "documentId": "Fieldwork_Staff_Resumes.pdf",
+      "kind": "firm"
+    },
+    {
+      "id": "test-staffing",
+      "documentId": "Fieldwork_Staffing_September_2026.xlsx",
+      "kind": "firm"
+    },
+    {
+      "id": "test-strategy",
+      "documentId": "Fieldwork_2027_Strategic_Plan.pdf",
+      "kind": "firm"
+    }
+  ],
+  "overview": {
+    "title": ["A library renewal.", "A decision to review."],
+    "paragraphs": [
+      "Juniper Library District seeks an interior retrofit.",
+      "The construction budget and staffing commitments are not supplied."
+    ],
+    "sources": [
+      {
+        "sourceId": "test-rfq",
+        "page": 2,
+        "label": "Changed evidence reference"
+      }
+    ],
+    "requirementIds": ["TEST-01", "TEST-02"]
+  },
+  "requirements": [
+    {
+      "id": "TEST-01",
+      "title": "Two adaptive-reuse examples",
+      "detail": "Supply two relevant examples and named delivery roles.",
+      "type": "Required",
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 2,
+          "label": "Changed evidence reference"
+        }
+      ]
+    },
+    {
+      "id": "TEST-02",
+      "title": "Accessibility approach",
+      "detail": "Describe inclusive access and occupied-building phasing.",
+      "type": "Submission",
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 3,
+          "label": "Changed evidence reference"
+        }
+      ]
+    }
+  ],
+  "procurement": {
+    "description": "Two synthetic requirements test a different procurement scenario.",
+    "callout": {
+      "title": "Confirm the submission scope.",
+      "detail": "This test result does not establish a pricing restriction.",
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 2,
+          "label": "Changed evidence reference"
+        }
+      ]
+    },
+    "scheduleLabel": "TEST SCHEDULE / MOUNTAIN TIME",
+    "scheduleNote": "All test dates require source confirmation.",
+    "scheduleSources": [
+      {
+        "sourceId": "test-rfq",
+        "page": 3,
+        "label": "Changed evidence reference"
+      }
+    ]
+  },
+  "deadlines": [
+    {
+      "id": "TEST-DATE-1",
+      "date": "2028-03-22",
+      "label": "Test qualifications due",
+      "detail": "11:00 AM MDT",
+      "primary": true,
+      "featured": true
+    },
+    {
+      "id": "TEST-DATE-2",
+      "date": "2028-06",
+      "label": "Test mobilization",
+      "detail": "June 2028",
+      "primary": false,
+      "featured": true
+    }
+  ],
+  "selection": [
+    {
+      "title": "Adaptive reuse",
+      "weight": 60,
+      "position": "Review",
+      "detail": "Confirm transferable experience."
+    },
+    {
+      "title": "Occupied-site approach",
+      "weight": 40,
+      "position": "Gap",
+      "detail": "Request further evidence."
+    }
+  ],
+  "selectionSources": [
+    {
+      "sourceId": "test-rfq",
+      "page": 3,
+      "label": "Changed evidence reference"
+    }
+  ],
+  "risks": [
+    {
+      "level": "High",
+      "title": "Unknown construction funding",
+      "detail": "The test opportunity has no disclosed construction budget.",
+      "action": "Request a budget range.",
+      "score": "test-financial"
+    }
+  ],
+  "experience": {
+    "evaluatedCount": 164,
+    "description": "Two different records selected for the rendering test.",
+    "overviewNote": "Two test candidates need scope review.",
+    "matchNote": "Synthetic match values test zero and unknown states.",
+    "callout": {
+      "title": "Two examples requested.",
+      "detail": "The changed result uses two project sheets.",
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 2,
+          "label": "Changed evidence reference"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "projectId": "FW-P010",
+        "match": 0,
+        "signals": ["Adaptive reuse review"],
+        "reason": "Changed project reasoning 1.",
+        "sources": [
+          {
+            "sourceId": "test-projects",
+            "page": 1,
+            "label": "Changed evidence reference"
+          }
+        ]
+      },
+      {
+        "projectId": "FW-P014",
+        "match": null,
+        "signals": ["Adaptive reuse review"],
+        "reason": "Changed project reasoning 2.",
+        "sources": [
+          {
+            "sourceId": "test-projects",
+            "page": 1,
+            "label": "Changed evidence reference"
+          }
+        ]
+      }
+    ],
+    "leadProjectIds": ["FW-P014", "FW-P010"]
+  },
+  "team": {
+    "evaluatedCount": 47,
+    "description": "Different people selected for the test result.",
+    "matchNote": "Synthetic team matches are not a staffing decision.",
+    "capacityNote": "No commitment is established by this test.",
+    "forecastNote": "June 2028 availability is unknown beyond the firm snapshot.",
+    "members": [
+      {
+        "personId": "FW-E008",
+        "role": "Test Design Lead",
+        "match": 0,
+        "reason": "Changed person reasoning 1.",
+        "constrained": false,
+        "sources": [
+          {
+            "sourceId": "test-staffing",
+            "page": 1,
+            "label": "Changed evidence reference"
+          },
+          {
+            "sourceId": "test-resumes",
+            "page": 1,
+            "label": "Changed evidence reference"
+          }
+        ]
+      },
+      {
+        "personId": "FW-E010",
+        "role": "Test Delivery Lead",
+        "match": 55,
+        "reason": "Changed person reasoning 2.",
+        "constrained": true,
+        "sources": [
+          {
+            "sourceId": "test-staffing",
+            "page": 1,
+            "label": "Changed evidence reference"
+          },
+          {
+            "sourceId": "test-resumes",
+            "page": 1,
+            "label": "Changed evidence reference"
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "title": ["Different leaders.", "Future capacity unknown."],
+      "personIds": ["FW-E008", "FW-E010"],
+      "periodIndices": [1, 3],
+      "periodLabels": ["30 days", "90 days"],
+      "detail": "The test compares different staffing periods.",
+      "dates": "September 2026 firm snapshot; June 2028 not covered.",
+      "sources": [
+        {
+          "sourceId": "test-staffing",
+          "page": 1,
+          "label": "Changed evidence reference"
+        }
+      ]
+    },
+    "disciplines": [
+      {
+        "name": "Interior architecture",
+        "status": "Confirm coverage"
+      },
+      {
+        "name": "Accessibility",
+        "status": "Review specialist needs"
+      }
+    ],
+    "disciplineNote": "No specialist commitment is assumed.",
+    "disciplineSources": [
+      {
+        "sourceId": "test-rfq",
+        "page": 2,
+        "label": "Changed evidence reference"
+      }
+    ]
+  },
+  "financials": {
+    "title": "A budget to establish.",
+    "feeRange": null,
+    "confidence": "Low",
+    "confidenceNote": "Fee basis unknown in changed result",
+    "note": "The changed result makes no fee or margin estimate.",
+    "callout": {
+      "title": "Budget and fee unknown.",
+      "detail": "Request scope and commercial information.",
+      "sources": [
+        {
+          "sourceId": "test-rfq",
+          "page": 2,
+          "label": "Changed evidence reference"
+        }
+      ]
+    },
+    "comparableProjectIds": ["FW-P014"],
+    "guardrails": ["Review reuse scope before pricing."],
+    "guardrailSources": [
+      {
+        "sourceId": "test-strategy",
+        "page": 3,
+        "label": "Changed evidence reference"
+      }
+    ],
+    "coverageNote": "Firm fee records remain unchanged; relevance needs review.",
+    "coverageSources": [
+      {
+        "sourceId": "test-projects",
+        "page": 1,
+        "label": "Changed evidence reference"
+      }
+    ]
+  },
+  "strategy": {
+    "title": ["Confirm the reuse opportunity.", "Establish an evidence base."],
+    "subtitle": "A synthetic review position.",
+    "overviewTitle": "Resolve the gaps first.",
+    "overview": "Request budget, assess reuse experience, and confirm staffing.",
+    "themes": [
+      {
+        "title": "Reuse evidence",
+        "detail": "Request comparable occupied-building delivery.",
+        "sources": [
+          {
+            "sourceId": "test-projects",
+            "page": 1,
+            "label": "Changed evidence reference"
+          }
+        ]
+      },
+      {
+        "title": "Funding clarity",
+        "detail": "Establish available funding before committing.",
+        "sources": [
+          {
+            "sourceId": "test-rfq",
+            "page": 3,
+            "label": "Changed evidence reference"
+          }
+        ]
+      }
+    ],
+    "projectOrder": [
+      {
+        "projectId": "FW-P014",
+        "label": "Test first precedent"
+      },
+      {
+        "projectId": "FW-P010",
+        "label": "Test second precedent"
+      }
+    ]
+  },
+  "firmEvidence": {
+    "projects": [
+      {
+        "sourceId": "test-projects",
+        "page": 1,
+        "label": "Changed evidence reference"
+      },
+      {
+        "sourceId": "test-qualifications",
+        "page": 1,
+        "label": "Changed evidence reference"
+      }
+    ],
+    "people": [
+      {
+        "sourceId": "test-staffing",
+        "page": 1,
+        "label": "Changed evidence reference"
+      },
+      {
+        "sourceId": "test-projects",
+        "page": 1,
+        "label": "Changed evidence reference"
+      },
+      {
+        "sourceId": "test-resumes",
+        "page": 1,
+        "label": "Changed evidence reference"
+      }
+    ]
+  }
+}

@@ -5,7 +5,8 @@
   "outputDirectory": "dist",
   "git": {
     "deploymentEnabled": {
-      "sync/fieldwork-release-recovery": false
+      "sync/fieldwork-release-recovery": false,
+      "phase-1/structured-analysis-result": false
     }
   }
 }

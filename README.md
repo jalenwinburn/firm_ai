@@ -18,7 +18,9 @@ Keep the entire `dist` folder together, including `sources`. The flagship produc
 - `dist/intelligence.css`: flagship typography, layout and intelligence surface.
 - `dist/intelligence-content.css`: detail sections, source viewer, drawers, analysis state and print rules.
 - `dist/fieldwork-data.js`: prepared Fieldwork Studio records and extracted source text.
-- `dist/intelligence-model.js`: curated demo recommendation, requirements, provenance and local comparison logic.
+- `dist/analysis-contract.js`: canonical AnalysisResult schema and runtime validation.
+- `dist/fieldwork-analysis.js`: primary curated Fieldwork result, including recommendations and evidence references.
+- `dist/intelligence-model.js`: local result verification and firm-record helpers.
 - `dist/opportunity.js`: navigation, rendering, evidence drawers, analysis workflow, export and mobile behavior.
 - `dist/atlas.html`: preserved earlier Atlas Studio experience.
 - `dist/sources/`: six original Fieldwork PDF and spreadsheet documents.
@@ -46,7 +48,7 @@ The original Windows-only preparation script, browser-test script, and screensho
 ## Development conventions
 
 - `dist/` is the maintained, deployable source directory, not generated output. Keep it in Git; do not introduce a duplicate `src/` tree without a build-system decision.
-- Keep source facts in `fieldwork-data.js`, evaluation logic in `intelligence-model.js`, and rendering/interactions in `opportunity.js`.
+- Keep firm/source facts in `fieldwork-data.js`, opportunity conclusions in the structured result, local verification in `intelligence-model.js`, and rendering/interactions in `opportunity.js`. See [the Phase 1 contract](docs/analysis-result.md).
 - Use two-space indentation, UTF-8, LF line endings, and readable CSS/JavaScript. `.editorconfig` supplies editor defaults; avoid unrelated formatting changes to legacy files.
 - Do not manually reformat the generated dataset or alter original PDF/XLSX evidence files. Preserve their integrity hashes.
 - Keep credentials, deployment-machine linkage, dependencies, and temporary verification output out of Git. See `.gitignore`.
@@ -60,4 +62,12 @@ Production website: https://firm-ai-jalen7.vercel.app
 
 Direct opportunity: https://firm-ai-jalen7.vercel.app/app.html
 
-Vercel is configured by `vercel.json` to serve `dist` with no build or install step. The release has been recovered onto `sync/fieldwork-release-recovery`; it is not yet merged into `main`. Automatic Vercel deployment is disabled for that recovery branch. Merging into `main` may trigger production deployment and requires explicit approval.
+Vercel is configured by `vercel.json` to serve `dist` with no build or install step. The recovered release and narrow-screen fixes were merged into `main` at `b6a8018`. Phase 1 is being reviewed on `phase-1/structured-analysis-result`. Automatic Vercel deployment is disabled for the recovery and Phase 1 branches. Merging into `main` may trigger production deployment and requires explicit approval.
+
+## Phase 1: data-driven Opportunity Intelligence
+
+Every opportunity-specific screen, drawer, workbench result and summary now reads from one validated result. The existing Fieldwork data and original evidence files remain unchanged. No backend, authentication, AI or new ingestion is included.
+
+See [AnalysisResult v1](docs/analysis-result.md) for architecture, field ownership, fixture selection, tests and manual review instructions. `package.json` contains development-only verification dependencies; production still serves `dist` without installation or a build.
+
+Run `npm ci`, `npm test`, `npx playwright install chromium`, and `npm run test:browser` for verification. `npm run preview` serves both the normal app and a deliberately changed test result locally. The original Windows-only tools are still absent; these are new portable Phase 1 tests.

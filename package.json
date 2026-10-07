@@ -1,0 +1,13 @@
+{
+  "name": "firm-ai",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/analysis-result.test.cjs",
+    "test:browser": "node tests/browser.mjs",
+    "preview": "node tests/server.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2",
+    "prettier": "3.6.2"
+  }
+}
